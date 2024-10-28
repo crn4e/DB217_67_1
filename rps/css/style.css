@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Rubik Wet Paint", system-ui;
+    color: black;
+}
+
+.badge {
+    background-color: #e25840;
+    font-size: 14px;
+    font-family: "Rubik Wet Paint", system-ui;
+    padding: 2px 10px;
+    width: 45px;
+    position: absolute;
+    top: 30px;
+    border-radius: 5px;
+}
+
+#user-label {
+    left: -35px;
+}
+
+#comp-label {
+    right: -35px;
+}
+
+#score {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    width: 200px;
+    font-family: 'Unlock',cursive;
+    font-size: 46px;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#result {
+    font-family: Calibri, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#stage {
+    text-align: center;
+    margin: 30px;
+}
+
+#comp-choice {
+    transform: rotateY(180deg);
+}
+
+#choices {
+    text-align: center;
+}
+
+#choices > div {
+    display: inline;
+
+}
+
+#choices img {
+    width: 80px;
+}
+
+.choice {
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+#message {
+    text-align: center;
+    margin-top: 10px;
+    font-family: Calibri, sans-serif;
+}
+
+.choice img:hover {
+    position: relative;
+    top: -10px;
+}
