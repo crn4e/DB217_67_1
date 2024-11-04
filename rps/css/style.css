@@ -61,6 +61,7 @@ header h1 {
 #stage {
     text-align: center;
     margin: 30px;
+    
 }
 
 #comp-choice {
@@ -83,7 +84,7 @@ header h1 {
 .choice {
     margin: 0 10px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid yellow;
 }
 #message {
     text-align: center;
@@ -94,4 +95,55 @@ header h1 {
 .choice img:hover {
     position: relative;
     top: -10px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes ready {
+    0%, 100% {
+        top: 0;
+    }
+    25% {
+        top: -10px;
+    }
+    75% {
+        top: 10px;
+    }
+}
+
+.ready {
+    position: relative;
+    animation: ready 0.5s infinite;
+}
+
+@keyframes user-winner {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+  }
+
+  @keyframes comp-winner {
+    0%, 100% {
+      transform: scale(1) rotateY(180deg);
+    }
+    50% {
+      transform: scale(1.25) rotateY(180deg);
+    }
+  }
+
+#user-choice.winner {
+    animation: user-winner 0.5s ease infinite;
+}
+
+#comp-choice.winner {
+    animation: comp-winner 0.5s ease infinite;
 }
